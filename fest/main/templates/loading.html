@@ -3,8 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loading...</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherish&family=Cinzel:wght@400..900&family=Playwrite+MX+Guides&display=swap" rel="stylesheet">
+    <title>오승우</title>
     <style>
+            .cinzel-<uniquifier> {
+              font-family: "Cinzel", serif;
+              font-optical-sizing: auto;
+              font-weight: <weight>;
+              font-style: normal;
+            }
+        * {
+            font-family: "Cinzel", serif;
+        }
         body {
             margin: 0;
             padding: 0;
@@ -17,16 +29,16 @@
             font-family: Arial, sans-serif;
             overflow: hidden;
         }
-        .loader {
+        .loader {   
             text-align: center;
         }
         .loader .animation {
-            font-size: 30px;
+            font-size: 70px;
             margin-bottom: 20px;
             animation: fadeInOut 2s infinite;
         }
         .loader .message {
-            font-size: 20px;
+            font-size: 40px;
             margin-top: 10px;
             opacity: 0;
             animation: showMessage 4s 1s forwards;
@@ -42,13 +54,14 @@
 </head>
 <body>
     <div class="loader">
-        <div class="animation">🔍 Accessing Spy Network...</div>
-        <div class="message">"007 Agents Only"</div>
+        {% comment %} <div class="animation">Accessing Spy Network...</div> {% endcomment %}
+        {% comment %} <div class="message">"2-11 Cocktail Bar"</div> {% endcomment %}
+        <div class="message">"접속 중이니까 기다려주세요~"</div>
     </div>
     <script>
         setTimeout(() => {
             window.location.href = "/main"; // 메인 페이지 URL로 이동
-        }, 5000); // 5초 후 이동
+        }, 5000);
     </script>
 </body>
 </html>
