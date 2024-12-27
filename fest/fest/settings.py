@@ -23,9 +23,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-lr)k**s91k1m19d!udrx88gitygnv2!(^1-@!y07y_qatf=#y5'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
+#밑에 디버그 코드 True로 바꿔야 로컬에서 실행 가능 False면 AWS에서 실행가능
 DEBUG = False
 
-ALLOWED_HOSTS = ['211festival.shop', 'www.211festival.shop']
+# ALLOWED_HOSTS = ['211festival.shop', 'www.211festival.shop']
 
 # Application definition
 
