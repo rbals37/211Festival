@@ -12,6 +12,12 @@
   100% {
     opacity: 1; } }
 
+.flex-center, footer, .menu, header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s forwards; }
+
 body {
   margin: 0;
   padding: 0;
@@ -22,29 +28,16 @@ body {
 header {
   font-size: 28px;
   font-family: "Cinzel";
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeIn 0.5s forwards; }
+  padding: 20px; }
 
 .menu {
-  margin-top: 70px;
+  padding: 50px;
   font-family: "HeirofLight";
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  animation: fadeIn 0.5s forwards; }
+  flex-direction: column; }
 
 footer {
   font-size: 14px;
   font-family: "HeirofLight";
-  margin: 50px;
-  padding: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  animation: fadeIn 0.5s forwards; }
+  padding: 20px; }
 
 /*# sourceMappingURL=main.css.map */

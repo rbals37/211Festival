@@ -1,21 +1,16 @@
-// 영역 임시 표시
-* {
-	// border: #fff solid 1px;
-}
-
 // 폰트 정의
 
 @font-face {
-	font-family: "Cinzel";
-	src: url("/static/Cinzel.ttf");
+  font-family: "Cinzel";
+  src: url("/static/Cinzel.ttf");
 }
 
 @font-face {
-	font-family: "HeirofLight";
-	src: url("/static/HeirofLight.ttf");
+  font-family: "HeirofLight";
+  src: url("/static/HeirofLight.ttf");
 }
 
-// 애니매이션 정의
+// 애니메이션 정의
 
 @keyframes fadeIn {
   0% {
@@ -26,13 +21,21 @@
   }
 }
 
+// 공통 스타일
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s forwards;
+}
+
 // 바디 scss
 
 body {
-	margin: 0;
-	padding: 0;
-	background-color: #000;
-	color: #fff;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
   height: 100vh;
 }
 
@@ -40,32 +43,21 @@ body {
 
 header {
   font-size: 28px;
-	font-family: "Cinzel";
-	margin: 20px;
-  display: flex;
-	justify-content: center;
-	align-items: center;
-  animation: fadeIn 0.5s forwards;
+  font-family: "Cinzel";
+  padding: 20px;
+  @extend .flex-center;
 }
 
 .menu {
-	margin-top: 70px;
-	font-family: "HeirofLight";
-  display: flex;
-	flex-direction: column; 
-	justify-content: center;
-	align-items: center;
-  animation: fadeIn 0.5s forwards;
+  padding: 50px;
+  font-family: "HeirofLight";
+  flex-direction: column;
+  @extend .flex-center;
 }
 
 footer {
-	font-size: 14px;
-	font-family: "HeirofLight";
-	margin: 50px;
-	padding: 30px;
-  display: flex;
-	justify-content: center;
-	align-items: center;
-  animation: fadeIn 0.5s forwards;
-
+  font-size: 14px;
+  font-family: "HeirofLight";
+  padding: 20px;
+  @extend .flex-center;
 }

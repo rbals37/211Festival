@@ -1,3 +1,6 @@
+* {
+  border: #fff solid 1px; }
+
 @font-face {
   font-family: "Cinzel";
   src: url("/static/Cinzel.ttf"); }
