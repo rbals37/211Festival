@@ -1,0 +1,63 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "Cinzel";
+  src: url("/static/Cinzel.ttf"); }
+
+@font-face {
+  font-family: "HeirofLight";
+  src: url("/static/HeirofLight.ttf"); }
+
+* {
+  font-size: 16px; }
+
+.korean {
+  font-family: "HeirofLight"; }
+
+.loader {
+  text-align: center;
+  font-family: "Cinzel"; }
+
+.loader .animation {
+  font-size: 24px;
+  margin-bottom: 20px;
+  animation: fadeInOut 1s infinite; }
+
+.loader .message {
+  margin-top: 10px;
+  opacity: 0;
+  animation: showMessage 1s forwards; }
+
+@keyframes fadeInOut {
+  0% {
+    transform: scale(0.8);
+    opacity: 0; }
+  100% {
+    transform: scale(1);
+    opacity: 0; }
+  50% {
+    opacity: 1; } }
+
+@keyframes showMessage {
+  0% {
+    opacity: 0;
+    transform: scale(0.7); }
+  100% {
+    opacity: 1;
+    transform: scale(1); } }
+
+header {
+  font-family: "Cinzel";
+  margin: 20px;
+  align-items: top; }
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  /* 어두운 배경 */
+  color: #fff; }
+
+/*# sourceMappingURL=style.css.map */

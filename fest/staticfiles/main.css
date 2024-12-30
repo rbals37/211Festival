@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Cinzel";
+  src: url("/static/Cinzel.ttf"); }
+
+@font-face {
+  font-family: "HeirofLight";
+  src: url("/static/HeirofLight.ttf"); }
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: #fff;
+  height: 100vh; }
+
+header {
+  font-size: 28px;
+  font-family: "Cinzel";
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s forwards; }
+
+.menu {
+  margin-top: 70px;
+  font-family: "HeirofLight";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s forwards; }
+
+footer {
+  font-size: 14px;
+  font-family: "HeirofLight";
+  margin: 50px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: fadeIn 0.5s forwards; }
+
+/*# sourceMappingURL=main.css.map */
