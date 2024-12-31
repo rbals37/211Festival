@@ -71,8 +71,8 @@ header {
   flex-direction: column;
   @extend .flex-center;
 	img {
-		margin-bottom: 10px;
-
+		margin-bottom: 15px;
+		border: 3px solid #fff;
 	}
 	p {
 		width: 300px;

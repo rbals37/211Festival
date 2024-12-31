@@ -1,3 +1,15 @@
+@charset "UTF-8";
+* {
+  border: none; }
+
+/* 모든 브라우저에서 스크롤바 숨기기 */
+::-webkit-scrollbar {
+  display: none; }
+
+html {
+  scrollbar-width: none;
+  -ms-overflow-style: none; }
+
 @font-face {
   font-family: "Cinzel";
   src: url("/static/Cinzel.ttf"); }
@@ -26,24 +38,29 @@ body {
   height: 100vh; }
 
 header {
-  font-size: 28px;
+  font-size: 38px;
   font-family: "Cinzel";
-  padding: 20px; }
+  padding-top: 30px; }
 
 .menu {
-  padding: 50px;
+  padding: 70px;
   font-family: "HeirofLight";
   flex-direction: column; }
+  .menu img {
+    margin-bottom: 10px; }
   .menu p {
     width: 300px;
-    text-align: center; }
+    text-align: center;
+    padding: 10px;
+    margin: 0; }
   .menu .en {
     font-family: "Cinzel";
-    font-size: 20px; }
+    font-size: 24px; }
 
 footer {
   font-size: 14px;
+  text-align: center;
   font-family: "HeirofLight";
-  padding: 20px; }
+  padding: 30px; }
 
 /*# sourceMappingURL=main.css.map */

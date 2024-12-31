@@ -26,6 +26,10 @@ SECRET_KEY = 'django-insecure-lr)k**s91k1m19d!udrx88gitygnv2!(^1-@!y07y_qatf=#y5
 # 밑에 디버그 코드 True로 바꿔야 로컬에서 실행 가능 False면 AWS에서 실행 가능
 DEBUG = True
 
+# 학교에서 테스트할 때 사용하는 주소
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', '11.56.254.238']
+
+# 실제로 배포할 때 사용하는 주소
 # ALLOWED_HOSTS = ['211festival.shop', 'www.211festival.shop']
 
 # Application definition
@@ -124,6 +128,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATICFILES_DIRS = [BASE_DIR / "static"]
 STATIC_ROOT = BASE_DIR / 'staticfiles'
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
