@@ -1,5 +1,7 @@
 // 폰트 정의
-
+* {
+  border: none;
+}
 @font-face {
 	font-family: "Cinzel";
 	src: url("/static/Cinzel.ttf");
@@ -65,7 +67,7 @@ body {
 .loader .animation {
   font-size: 24px;
   margin-bottom: 20px;
-  animation: fadeInOut 1s infinite;
+  animation: fadeInOut 1.2s infinite;
 }
 
 .loader .message {

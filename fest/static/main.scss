@@ -53,6 +53,14 @@ header {
   font-family: "HeirofLight";
   flex-direction: column;
   @extend .flex-center;
+	p {
+		width: 300px;
+		text-align: center;
+	}
+	.en {
+		font-family: "Cinzel";
+		font-size: 20px;
+	}
 }
 
 footer {

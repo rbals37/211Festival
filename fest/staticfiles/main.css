@@ -34,6 +34,12 @@ header {
   padding: 50px;
   font-family: "HeirofLight";
   flex-direction: column; }
+  .menu p {
+    width: 300px;
+    text-align: center; }
+  .menu .en {
+    font-family: "Cinzel";
+    font-size: 20px; }
 
 footer {
   font-size: 14px;
