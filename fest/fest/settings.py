@@ -27,10 +27,10 @@ SECRET_KEY = 'django-insecure-lr)k**s91k1m19d!udrx88gitygnv2!(^1-@!y07y_qatf=#y5
 DEBUG = True
 
 # 학교에서 테스트할 때 사용하는 주소
-ALLOWED_HOSTS = ['localhost', '127.0.0.1', '11.56.254.238']
+# ALLOWED_HOSTS = ['localhost', '127.0.0.1', '11.56.254.238']
 
 # 실제로 배포할 때 사용하는 주소
-# ALLOWED_HOSTS = ['211festival.shop', 'www.211festival.shop']
+ALLOWED_HOSTS = ['211festival.shop', 'www.211festival.shop']
 
 # Application definition
 INSTALLED_APPS = [
@@ -126,8 +126,7 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 STATIC_URL = '/static/'
-STATICFILES_DIRS = [BASE_DIR / "static"]
-STATIC_ROOT = BASE_DIR / 'staticfiles'
+STATIC_ROOT = BASE_DIR / 'static'
 
 
 # Default primary key field type
